@@ -19,12 +19,5 @@ Pod::Spec.new do |spec|
         'Mockingjay/NSURLSessionConfiguration.swift',
         'Mockingjay/MockingjayURLSessionConfiguration.m'
   end
-
-  spec.subspec 'XCTest' do |xctest_spec|
-    xctest_spec.dependency 'Mockingjay/Core'
-    xctest_spec.source_files = 'Mockingjay/XCTest.swift'
-    xctest_spec.frameworks = 'XCTest'
-    xctest_spec.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
-  end
 end
 
